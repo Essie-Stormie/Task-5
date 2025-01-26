@@ -47,7 +47,7 @@ class StudentManagementSystem {
     }
 }
 function displayName(){
-    console.log("Chickenface");
+    console.log("Harry McPushy");
     
 }
 function runStudentManagementDemo() {
