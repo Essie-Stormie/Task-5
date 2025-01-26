@@ -65,6 +65,12 @@ function runStudentManagementDemo() {
     Diego.addGrade(93);
     sms.addStudent(Diego);
 
+    const Jared= new Student("Jared Cummings", "Duckie3");
+    Jared.addGrade(66);
+    Jared.addGrade(80);
+    Jared.addGrade(55);
+    sms.addStudent(Jared);
+
     console.log("All Students:");
     sms.getAllStudents().forEach(student => {
         console.log(JSON.stringify(student, null, 2));
