@@ -47,30 +47,30 @@ class StudentManagementSystem {
     }
 }
 function displayName(){
-    console.log("Name: Ayesha");
+    console.log("Chickenface");
     
 }
 function runStudentManagementDemo() {
     const sms = new StudentManagementSystem();
 
-    const Essie = new Student("Essie Dame", "ST001");
+    const Essie = new Student("Essie Dame", "Duckie1");
     Essie.addGrade(85);
     Essie.addGrade(90);
     Essie.addGrade(88);
     sms.addStudent(Essie);
 
-    const jane = new Student("Jane Smith", "ST002");
-    jane.addGrade(92);
-    jane.addGrade(95);
-    jane.addGrade(93);
-    sms.addStudent(jane);
+    const Diego = new Student("Diego Ramirez", "Duckie2");
+    Diego.addGrade(92);
+    Diego.addGrade(95);
+    Diego.addGrade(93);
+    sms.addStudent(Diego);
 
     console.log("All Students:");
     sms.getAllStudents().forEach(student => {
         console.log(JSON.stringify(student, null, 2));
     });
 
-    const foundStudent = sms.findStudentById("ST001");
+    const foundStudent = sms.findStudentById("Duckie1");
     console.log("\nFound Student Details:");
     console.log(JSON.stringify(foundStudent.getStudentDetails(), null, 2));
 
